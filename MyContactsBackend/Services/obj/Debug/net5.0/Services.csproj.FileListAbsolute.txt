@@ -10,3 +10,6 @@ C:\Users\MICRO\source\repos\ProjetoFinalApex\MyContactsBackend\Services\obj\Debu
 C:\Users\MICRO\source\repos\ProjetoFinalApex\MyContactsBackend\Services\obj\Debug\net5.0\refint\Services.dll
 C:\Users\MICRO\source\repos\ProjetoFinalApex\MyContactsBackend\Services\obj\Debug\net5.0\Services.pdb
 C:\Users\MICRO\source\repos\ProjetoFinalApex\MyContactsBackend\Services\obj\Debug\net5.0\ref\Services.dll
+C:\Users\MICRO\source\repos\ProjetoFinalApex\MyContactsBackend\Services\bin\Debug\net5.0\Data.dll
+C:\Users\MICRO\source\repos\ProjetoFinalApex\MyContactsBackend\Services\bin\Debug\net5.0\Data.pdb
+C:\Users\MICRO\source\repos\ProjetoFinalApex\MyContactsBackend\Services\obj\Debug\net5.0\Services.csproj.CopyComplete
