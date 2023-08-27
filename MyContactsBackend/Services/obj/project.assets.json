@@ -1796,6 +1796,16 @@
         "runtime": {
           "bin/placeholder/Data.dll": {}
         }
+      },
+      "Utils/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Utils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Utils.dll": {}
+        }
       }
     }
   },
@@ -6162,11 +6172,17 @@
       "type": "project",
       "path": "../Data/Data.csproj",
       "msbuildProject": "../Data/Data.csproj"
+    },
+    "Utils/1.0.0": {
+      "type": "project",
+      "path": "../Utils/Utils.csproj",
+      "msbuildProject": "../Utils/Utils.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Data >= 1.0.0"
+      "Data >= 1.0.0",
+      "Utils >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6198,6 +6214,9 @@
           "projectReferences": {
             "C:\\Users\\MICRO\\source\\repos\\ProjetoFinalApex\\MyContactsBackend\\Data\\Data.csproj": {
               "projectPath": "C:\\Users\\MICRO\\source\\repos\\ProjetoFinalApex\\MyContactsBackend\\Data\\Data.csproj"
+            },
+            "C:\\Users\\MICRO\\source\\repos\\ProjetoFinalApex\\MyContactsBackend\\Utils\\Utils.csproj": {
+              "projectPath": "C:\\Users\\MICRO\\source\\repos\\ProjetoFinalApex\\MyContactsBackend\\Utils\\Utils.csproj"
             }
           }
         }

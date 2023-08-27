@@ -1,13 +1,15 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using Utils.Dtos.Contact;
 
 namespace Services.Interfaces
 {
     public interface IContactService
     {
-        void CreateContact(string nome);
-        List<string> GetContacts();
-        void UpdateContact(string nome);
-        void DeleteContact(string nome);
+        Task<bool> CreateAsync(ContactCreateRequestDto contactCreateDto);
+        Task<List<ContactResponseDto>> GetAllByUserIdAsync(int userId);
+        Task<bool> UpdateAsync(ContactUpdateRequestDto contactUpdateDto);
+        Task<bool> DeleteAsync(int id);
 
     }
 }

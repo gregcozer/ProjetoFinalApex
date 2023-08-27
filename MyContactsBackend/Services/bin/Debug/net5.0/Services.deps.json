@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v5.0": {
       "Services/1.0.0": {
         "dependencies": {
-          "Data": "1.0.0"
+          "Data": "1.0.0",
+          "Utils": "1.0.0"
         },
         "runtime": {
           "Services.dll": {}
@@ -1110,6 +1111,11 @@
         "runtime": {
           "Data.dll": {}
         }
+      },
+      "Utils/1.0.0": {
+        "runtime": {
+          "Utils.dll": {}
+        }
       }
     }
   },
@@ -1813,6 +1819,11 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Utils/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

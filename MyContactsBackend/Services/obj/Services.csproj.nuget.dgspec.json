@@ -115,8 +115,66 @@
             "projectReferences": {
               "C:\\Users\\MICRO\\source\\repos\\ProjetoFinalApex\\MyContactsBackend\\Data\\Data.csproj": {
                 "projectPath": "C:\\Users\\MICRO\\source\\repos\\ProjetoFinalApex\\MyContactsBackend\\Data\\Data.csproj"
+              },
+              "C:\\Users\\MICRO\\source\\repos\\ProjetoFinalApex\\MyContactsBackend\\Utils\\Utils.csproj": {
+                "projectPath": "C:\\Users\\MICRO\\source\\repos\\ProjetoFinalApex\\MyContactsBackend\\Utils\\Utils.csproj"
               }
             }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\MICRO\\source\\repos\\ProjetoFinalApex\\MyContactsBackend\\Utils\\Utils.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\MICRO\\source\\repos\\ProjetoFinalApex\\MyContactsBackend\\Utils\\Utils.csproj",
+        "projectName": "Utils",
+        "projectPath": "C:\\Users\\MICRO\\source\\repos\\ProjetoFinalApex\\MyContactsBackend\\Utils\\Utils.csproj",
+        "packagesPath": "C:\\Users\\MICRO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MICRO\\source\\repos\\ProjetoFinalApex\\MyContactsBackend\\Utils\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\MICRO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
           }
         },
         "warningProperties": {
