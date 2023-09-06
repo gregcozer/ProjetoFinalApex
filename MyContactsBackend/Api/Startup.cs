@@ -12,6 +12,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Services.ApiServices;
 using Services.Interfaces;
+using System;
 using System.Security.Claims;
 using System.Text;
 
@@ -43,9 +44,9 @@ namespace Api
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "MyContactsApi", Version = "v1" });
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
-                    Description = "Jwt Authorization header using the Bearer scheme",
+                    Description = "JWT Authorization header using the Bearer scheme",
                     Type = SecuritySchemeType.Http,
-                    Scheme = "Bearer"
+                    Scheme = "bearer"
                 });
                 c.AddSecurityRequirement(new OpenApiSecurityRequirement
                 {   
@@ -79,8 +80,9 @@ namespace Api
                     ValidateIssuerSigningKey = true,
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"])),
                     ValidateIssuer = false,
-                    ValidateAudience =false
-
+                    ValidateAudience =false,
+                    ValidateLifetime = true,
+                    ClockSkew = TimeSpan.Zero
                 };
             });
             

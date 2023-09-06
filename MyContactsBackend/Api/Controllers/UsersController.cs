@@ -34,28 +34,8 @@ namespace Api.Controllers
                 return BadRequest(new ApiResponse(ex.Message));
             }
         }
-        [Authorize(Policy = "Administrator")]
-        [HttpPut("update-to-admin/{id}")]
-
-        public async Task<IActionResult> UpdateToAdmin([FromRoute] int id)
-        {
-            try
-            {
-                await _userService.UpdateToAdmin(id);
-
-                return Ok(new ApiResponse());
-            }
-            catch (Exception ex)
-            {
-
-                return BadRequest(new ApiResponse(ex.Message));
-            }
-
-
-
-        }
-
-        [HttpPost]
+        
+       [HttpPost]
         public async Task<IActionResult> CreateNewUser([FromBody] UserCreateRequestDto userDto)
         {
             try
@@ -93,6 +73,23 @@ namespace Api.Controllers
                 return BadRequest(new ApiResponse (ex.Message));
             }
 
+        }
+        [Authorize(Policy = "Administrator")]
+        [HttpPut("update-to-admin/{id}")]
+
+        public async Task<IActionResult> UpdateToAdmin([FromRoute] int id)
+        {
+            try
+            {
+                await _userService.UpdateToAdmin(id);
+
+                return Ok(new ApiResponse());
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(new ApiResponse(ex.Message));
+            }
         }
 
         [Authorize(Policy = "Administrator")]

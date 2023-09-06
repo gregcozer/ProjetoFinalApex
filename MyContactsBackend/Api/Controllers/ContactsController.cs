@@ -46,6 +46,8 @@ namespace Api.Controllers
         {
             try
             {
+                contactDto.UserId = GetUserIdFromRequest();
+
               var success = await _contactService.CreateAsync(contactDto);
 
                 if (success == true)
@@ -115,10 +117,11 @@ namespace Api.Controllers
 
         private int GetUserIdFromRequest()
         {
-            var token = Request.Headers["Authorization"].ToString().Replace("Bearer", "");
+            string token = Request.Headers["Authorization"].ToString().Replace("Bearer", "").Trim();
+            string token1 = Request.Headers["Authorization"].ToString().Replace("Bearer", "");
 
-            var tokenHandlers = new JwtSecurityTokenHandler();
-            var jwtToken = tokenHandlers.ReadJwtToken(token);
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var jwtToken = tokenHandler.ReadJwtToken(token);
             var nameIdClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "nameid");
             var userId = int.Parse(nameIdClaim.Value);
             return userId;

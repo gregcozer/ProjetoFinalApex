@@ -23,7 +23,7 @@ namespace Services.ApiServices
 
         public async Task<bool> CreateAsync(ContactCreateRequestDto contactCreateDto)
         {
-            var user = _userRepository.GetByIdAsync(contactCreateDto.UserId);
+            var user = await _userRepository.GetByIdAsync(contactCreateDto.UserId);
 
             if (user != null)
             {
